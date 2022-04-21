@@ -22,7 +22,6 @@ public class Intents {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:" + telefone));
         activity.startActivity(callIntent);
-
     }
 
     public void whatsappCall(Activity activity, String contato){

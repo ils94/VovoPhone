@@ -52,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de Telefone"
+            android:inputType="number"
             android:singleLine="true" />
 
         <TextView
@@ -72,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de Telefone"
+            android:inputType="number"
             android:singleLine="true" />
 
         <TextView
@@ -92,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de Telefone"
+            android:inputType="number"
             android:singleLine="true" />
 
         <TextView
@@ -112,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de Telefone"
+            android:inputType="number"
             android:singleLine="true" />
 
         <TextView
@@ -132,6 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de Telefone"
+            android:inputType="number"
             android:singleLine="true" />
 
     </LinearLayout>

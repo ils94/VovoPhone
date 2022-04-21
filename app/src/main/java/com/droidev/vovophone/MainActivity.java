@@ -79,13 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(MainActivity.this)) {
-
-                    intents.intentActivity(MainActivity.this, TelefoneActivity.class);
-                } else {
-
-                    Toast.makeText(MainActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
-                }
+                intents.intentActivity(MainActivity.this, TelefoneActivity.class);
             }
         });
 
@@ -111,13 +105,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(MainActivity.this)) {
-
-                    intents.intentActivity(MainActivity.this, WhatsappActivity.class);
-                } else {
-
-                    Toast.makeText(MainActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
-                }
+                intents.intentActivity(MainActivity.this, WhatsappActivity.class);
             }
         });
 
@@ -173,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.configuracoes:
 
+                startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
+
                 break;
 
             case R.id.configuracoesDeContatos:
@@ -183,8 +173,20 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.googleplaystore:
 
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.android.vending");
+                if (launchIntent != null) {
+                    startActivity(launchIntent);
+                } else {
+
+                    Toast.makeText(MainActivity.this, "Não foi possível abrir a Google Play Store.", Toast.LENGTH_SHORT).show();
+                }
+
                 break;
+
             case R.id.navegador:
+
+                Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com.br"));
+                startActivity(browser);
 
                 break;
         }

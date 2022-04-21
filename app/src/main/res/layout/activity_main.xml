@@ -22,7 +22,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="CÂMERA" />
+            android:fontFamily="sans-serif-black"
+            android:text="CÂMERA"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/galeria"
@@ -31,7 +33,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="GALERIA" />
+            android:fontFamily="sans-serif-black"
+            android:text="GALERIA"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -49,7 +53,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="TELEFONE" />
+            android:fontFamily="sans-serif-black"
+            android:text="TELEFONE"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/mensagens"
@@ -58,7 +64,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="MENSAGENS" />
+            android:fontFamily="sans-serif-black"
+            android:text="MENSAGENS"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -76,7 +84,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="WHATSAPP" />
+            android:fontFamily="sans-serif-black"
+            android:text="WHATSAPP"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/contatos"
@@ -85,7 +95,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="CONTATOS" />
+            android:fontFamily="sans-serif-black"
+            android:text="CONTATOS"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -103,7 +115,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="BRILHO DA TELA" />
+            android:fontFamily="sans-serif-black"
+            android:text="AJUSTAR BRILHO"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/alarme"
@@ -112,7 +126,9 @@
             android:layout_margin="1dp"
             android:layout_weight="50"
             android:background="@color/white"
-            android:text="ALARME" />
+            android:fontFamily="sans-serif-black"
+            android:text="ALARME"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

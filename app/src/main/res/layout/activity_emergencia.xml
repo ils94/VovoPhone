@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_margin="5dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,23 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
-        android:layout_weight="50"
-        android:text="AMBULÂNCIA" />
+        android:layout_weight="33.33333"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="AMBULÂNCIA"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/bombeiros"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
-        android:layout_weight="50"
-        android:text="BOMBEIROS" />
+        android:layout_weight="33.33333"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="BOMBEIROS"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/policia"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
-        android:layout_weight="50"
-        android:text="POLICIA" />
+        android:layout_weight="33.33333"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="POLÍCIA"
+        android:textSize="20sp" />
 
 </LinearLayout>
