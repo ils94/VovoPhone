@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 1:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 2:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 3:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 4:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 5:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato 6:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nomeContato6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do contato"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/numeroContato6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Telefone"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+</ScrollView>

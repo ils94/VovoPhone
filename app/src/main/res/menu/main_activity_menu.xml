@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/configuracoes"
+        android:title="Configurações do Android" />
+
+    <item
+        android:id="@+id/configuracoesDeContatos"
+        android:title="Configurações de Contatos" />
+
+    <item
+        android:id="@+id/googleplaystore"
+        android:title="Google Play Store" />
+
+    <item
+        android:id="@+id/navegador"
+        android:title="Navegador de Internet" />
+</menu>

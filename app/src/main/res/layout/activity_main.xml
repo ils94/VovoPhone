@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="CÂMERA" />
+
+        <Button
+            android:id="@+id/galeria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="GALERIA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="TELEFONE" />
+
+        <Button
+            android:id="@+id/mensagens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="MENSAGENS" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="WHATSAPP" />
+
+        <Button
+            android:id="@+id/contatos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="CONTATOS" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/brilho"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="BRILHO DA TELA" />
+
+        <Button
+            android:id="@+id/alarme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="50"
+            android:background="@color/white"
+            android:text="ALARME" />
+
+    </LinearLayout>
+
+</LinearLayout>
