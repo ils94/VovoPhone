@@ -16,6 +16,7 @@ public class BrilhoActivity extends AppCompatActivity {
 
     TextView percent25, percent50, percent75, percent100;
     Permissoes permissoes;
+    String titulo = "BRILHO: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class BrilhoActivity extends AppCompatActivity {
         permissoes = new Permissoes();
 
         try {
-            setTitle("Ajustar Brilho da Tela - Atual: " + (int) getCurrentBrightness() + "%");
+            setTitle(titulo + (int) getCurrentBrightness() + "%");
         } catch (Settings.SettingNotFoundException e) {
             e.printStackTrace();
         }
@@ -47,7 +48,7 @@ public class BrilhoActivity extends AppCompatActivity {
 
                     adjust(25);
 
-                    setTitle("Ajustar Brilho da Tela - Atual: 25%");
+                    setTitle(titulo + "25%");
                 } else {
 
                     Toast.makeText(BrilhoActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
@@ -63,7 +64,7 @@ public class BrilhoActivity extends AppCompatActivity {
 
                     adjust(50);
 
-                    setTitle("Ajustar Brilho da Tela - Atual: 50%");
+                    setTitle(titulo + "50%");
                 } else {
 
                     Toast.makeText(BrilhoActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
@@ -79,7 +80,7 @@ public class BrilhoActivity extends AppCompatActivity {
 
                     adjust(75);
 
-                    setTitle("Ajustar Brilho da Tela - Atual: 75%");
+                    setTitle(titulo + "75%");
                 } else {
 
                     Toast.makeText(BrilhoActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
@@ -95,7 +96,7 @@ public class BrilhoActivity extends AppCompatActivity {
 
                     adjust(100);
 
-                    setTitle("Ajustar Brilho da Tela - Atual: 100%");
+                    setTitle(titulo + "100%");
                 } else {
 
                     Toast.makeText(BrilhoActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
