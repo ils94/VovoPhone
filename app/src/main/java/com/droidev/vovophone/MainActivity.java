@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     TextView camera, galeria, telefone, contatos, whatsapp, mensagens, brilho, alarme;
     Intents intents;
     Permissoes permissoes;
+    Atualizar atualizar;
+    String url = "https://github.com/ils94/VovoPhone/releases/download/release/VovoPhone.apk";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         intents = new Intents();
         permissoes = new Permissoes();
+        atualizar = new Atualizar();
 
         camera = findViewById(R.id.camera);
         galeria = findViewById(R.id.galeria);
@@ -198,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.atualizar:
 
-
+                atualizar.downloader(MainActivity.this, url);
 
                 break;
         }
