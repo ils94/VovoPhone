@@ -1,7 +1,10 @@
 package com.droidev.vovophone;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +23,10 @@ public class ConfigurarContatosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_configurar_contatos);
 
         setTitle("CONFIGURAR CONTATOS");
+
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
 
         nomeContato1 = findViewById(R.id.nomeContato1);
         numeroContato1 = findViewById(R.id.numeroContato1);
