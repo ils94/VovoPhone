@@ -4,41 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
+    android:background="@color/black"
     android:orientation="vertical"
+    android:padding="1dp"
     tools:context=".MainActivity">
 
-    <Button
+    <TextView
         android:id="@+id/ambulancia"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
         android:layout_weight="33.33333"
-        android:background="@color/white"
+        android:background="@color/red"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="AMBULÂNCIA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
-    <Button
+    <TextView
         android:id="@+id/bombeiros"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
         android:layout_weight="33.33333"
-        android:background="@color/white"
+        android:background="@color/tomato"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="BOMBEIROS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
-    <Button
+    <TextView
         android:id="@+id/policia"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="1dp"
         android:layout_weight="33.33333"
-        android:background="@color/white"
+        android:background="@color/blue"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="POLÍCIA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
 </LinearLayout>

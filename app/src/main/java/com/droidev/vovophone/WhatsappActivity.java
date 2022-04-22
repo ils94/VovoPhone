@@ -1,18 +1,19 @@
 package com.droidev.vovophone;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class WhatsappActivity extends AppCompatActivity {
 
-    Button contato1, contato2, contato3, contato4, contato5, contato6, whatsapp;
+    TextView contato1, contato2, contato3, contato4, contato5, contato6, whatsapp;
     Intents intent;
     Contatos contatos;
     Permissoes permissoes;
@@ -24,6 +25,10 @@ public class WhatsappActivity extends AppCompatActivity {
         setContentView(R.layout.activity_whatsapp);
 
         setTitle("WHATSAPP");
+
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
 
         tinyDB = new TinyDB(WhatsappActivity.this);
 
@@ -141,6 +146,5 @@ public class WhatsappActivity extends AppCompatActivity {
         });
 
         contatos.carregarContatos(WhatsappActivity.this, contato1, contato2, contato3, contato4, contato5, contato6);
-
     }
 }

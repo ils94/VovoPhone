@@ -1,10 +1,11 @@
 package com.droidev.vovophone;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.AlarmClock;
@@ -13,12 +14,12 @@ import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button camera, galeria, telefone, contatos, whatsapp, mensagens, brilho, alarme;
+    TextView camera, galeria, telefone, contatos, whatsapp, mensagens, brilho, alarme;
     Intents intents;
     Permissoes permissoes;
 
@@ -27,10 +28,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("TELA INICIAL");
+
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
+
         intents = new Intents();
         permissoes = new Permissoes();
-
-        setTitle("TELA INICIAL");
 
         camera = findViewById(R.id.camera);
         galeria = findViewById(R.id.galeria);
@@ -64,13 +69,14 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
                     Intent intent = new Intent();
-                    intent.setType("image/*");
                     intent.setAction(Intent.ACTION_VIEW);
+                    intent.setType("image/*");
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
 
                 } catch (Exception e) {
 
-                    Toast.makeText(MainActivity.this, "Erro ao abrir a galeria.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -165,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
 
-            case R.id.configuracoesDeContatos:
+            case R.id.configurarContatos:
 
                 intents.intentActivity(MainActivity.this, ConfigurarContatosActivity.class);
 
@@ -187,6 +193,12 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com.br"));
                 startActivity(browser);
+
+                break;
+
+            case R.id.atualizar:
+
+
 
                 break;
         }

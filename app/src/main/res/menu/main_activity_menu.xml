@@ -6,8 +6,8 @@
         android:title="Configurações do Android" />
 
     <item
-        android:id="@+id/configuracoesDeContatos"
-        android:title="Configurações de Contatos" />
+        android:id="@+id/configurarContatos"
+        android:title="Configurar Contatos" />
 
     <item
         android:id="@+id/googleplaystore"
@@ -16,4 +16,8 @@
     <item
         android:id="@+id/navegador"
         android:title="Navegador de Internet" />
+
+    <item
+        android:id="@+id/atualizar"
+        android:title="Atualizar" />
 </menu>

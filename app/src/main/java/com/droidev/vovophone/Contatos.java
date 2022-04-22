@@ -1,11 +1,11 @@
 package com.droidev.vovophone;
 
 import android.app.Activity;
-import android.widget.Button;
+import android.widget.TextView;
 
 public class Contatos {
 
-    public void carregarContatos(Activity activity, Button contato1, Button contato2, Button contato3, Button contato4, Button contato5, Button contato6) {
+    public void carregarContatos(Activity activity, TextView contato1, TextView contato2, TextView contato3, TextView contato4, TextView contato5, TextView contato6) {
 
         TinyDB tinyDB = new TinyDB(activity);
 

@@ -1,15 +1,19 @@
 package com.droidev.vovophone;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class EmergenciaActivity extends AppCompatActivity {
 
-    Button ambulancia, bombeiros, policia;
+    TextView ambulancia, bombeiros, policia;
     Intents intent;
     Permissoes permissoes;
 
@@ -19,6 +23,10 @@ public class EmergenciaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_emergencia);
 
         setTitle("EMERGÊNCIA");
+
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
 
         intent = new Intents();
 

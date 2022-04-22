@@ -1,26 +1,30 @@
 package com.droidev.vovophone;
 
-import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
-import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class BrilhoActivity extends AppCompatActivity {
 
-    Button percent25, percent50, percent75, percent100;
+    TextView percent25, percent50, percent75, percent100;
     Permissoes permissoes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brilho);
+
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
 
         permissoes = new Permissoes();
 

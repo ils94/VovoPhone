@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
+    android:background="@color/black"
     android:orientation="vertical"
+    android:padding="1dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,26 +16,32 @@
         android:layout_weight="25"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:id="@+id/telcontato1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/deeppink"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <Button
+        <TextView
             android:id="@+id/telcontato2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/chocolate"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -46,26 +53,32 @@
         android:layout_weight="25"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:id="@+id/telcontato3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/purple"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 3"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <Button
+        <TextView
             android:id="@+id/telcontato4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/tomato"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -77,26 +90,32 @@
         android:layout_weight="25"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:id="@+id/telcontato5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/blue"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <Button
+        <TextView
             android:id="@+id/telcontato6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="50"
-            android:background="@color/white"
+            android:background="@color/teal"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="Contato 6"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -108,14 +127,17 @@
         android:layout_weight="25"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:id="@+id/emergencia"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
-            android:background="@color/white"
+            android:background="@color/red"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="EMERGÊNCIA"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
