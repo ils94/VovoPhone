@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/wifi"
-        android:title="Ligar/Desligar Wifi"
-        app:showAsAction="always"
-        android:icon="@drawable/wifioff"/>
-
-    <item
         android:id="@+id/configuracoes"
         android:title="Configurações do Android" />
 

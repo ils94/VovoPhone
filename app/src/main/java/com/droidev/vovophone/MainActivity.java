@@ -3,12 +3,10 @@ package com.droidev.vovophone;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.provider.ContactsContract;
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     Intents intents;
     Permissoes permissoes;
     Atualizar atualizar;
-    Menu mOptionsMenu;
     String url = "https://github.com/ils94/VovoPhone/releases/download/release/VovoPhone.apk";
 
     @Override
@@ -165,33 +162,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_activity_menu, menu);
 
-        mOptionsMenu = menu;
-
         return super.onCreateOptionsMenu(menu);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-
-            case R.id.wifi:
-
-                WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-
-                if (!wifi.isWifiEnabled()) {
-
-                    wifi.setWifiEnabled(true);
-
-                    mOptionsMenu.findItem(R.id.wifi).setIcon(R.drawable.wifion);
-
-                } else {
-
-                    wifi.setWifiEnabled(false);
-
-                    mOptionsMenu.findItem(R.id.wifi).setIcon(R.drawable.wifioff);
-                }
-
-                break;
 
             case R.id.configuracoes:
 
