@@ -25,7 +25,7 @@
             android:padding="5dp"
             android:singleLine="true"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="50sp" />
 
     </LinearLayout>
 
@@ -48,7 +48,7 @@
             android:text="LIGAR"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/discadorApagar"
@@ -62,7 +62,7 @@
             android:text="APAGAR"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
