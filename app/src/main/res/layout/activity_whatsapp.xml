@@ -27,6 +27,7 @@
             android:gravity="center"
             android:text="Contato 1"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -41,6 +42,7 @@
             android:gravity="center"
             android:text="Contato 2"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -64,6 +66,7 @@
             android:gravity="center"
             android:text="Contato 3"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -78,6 +81,7 @@
             android:gravity="center"
             android:text="Contato 4"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -101,6 +105,7 @@
             android:gravity="center"
             android:text="Contato 5"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -115,6 +120,7 @@
             android:gravity="center"
             android:text="Contato 6"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
