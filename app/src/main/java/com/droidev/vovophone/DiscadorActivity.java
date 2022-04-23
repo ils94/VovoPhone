@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class DiscadorActivity extends AppCompatActivity {
 
     TextView num1, num2, num3, num4, num5, num6, num7, num8, num9, num0, jogoDaVelha, asterisco, numero, ligar, apagar;
+    Intents intents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class DiscadorActivity extends AppCompatActivity {
         ActionBar bar = getSupportActionBar();
         assert bar != null;
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1689d2")));
+
+        intents = new Intents();
 
         numero = findViewById(R.id.numero);
 
@@ -46,7 +49,7 @@ public class DiscadorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                intents.telefone(DiscadorActivity.this, numero.getText().toString());
             }
         });
 
@@ -65,11 +68,109 @@ public class DiscadorActivity extends AppCompatActivity {
             }
         });
 
+        apagar.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+
+                numero.setText("");
+
+                return true;
+            }
+        });
+
         num1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 numero.append("1");
+            }
+        });
+
+        num2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("2");
+            }
+        });
+
+        num3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("3");
+            }
+        });
+
+        num4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("4");
+            }
+        });
+
+        num5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("5");
+            }
+        });
+
+        num6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("6");
+            }
+        });
+
+        num7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("7");
+            }
+        });
+
+        num8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("8");
+            }
+        });
+
+        num9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("9");
+            }
+        });
+
+        num0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("0");
+            }
+        });
+
+        asterisco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("*");
+            }
+        });
+
+        jogoDaVelha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                numero.append("#");
             }
         });
 
