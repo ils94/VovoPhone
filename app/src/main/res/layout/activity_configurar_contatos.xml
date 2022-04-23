@@ -15,20 +15,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 1:"
+            android:text="CONTATO 1:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -42,20 +44,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 2:"
+            android:text="CONTATO 2:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -69,20 +73,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 3:"
+            android:text="CONTATO 3:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -96,20 +102,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 4:"
+            android:text="CONTATO 4:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -123,20 +131,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 5:"
+            android:text="CONTATO 5:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -150,20 +160,22 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Contato 6:"
+            android:text="CONTATO 6:"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/nomeContato6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do contato"
+            android:hint="Nome do Contato"
             android:singleLine="true" />
 
         <EditText
@@ -177,7 +189,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="#c0c0c0" />
+            android:background="@color/black" />
 
     </LinearLayout>
 
