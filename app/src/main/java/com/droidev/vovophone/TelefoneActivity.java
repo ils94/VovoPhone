@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class TelefoneActivity extends AppCompatActivity {
 
-    TextView contato1, contato2, contato3, contato4, contato5, contato6, emergencia;
+    TextView contato1, contato2, contato3, contato4, contato5, contato6, emergencia, discador;
     Intents intent;
     Permissoes permissoes;
     Contatos contatos;
@@ -43,6 +43,8 @@ public class TelefoneActivity extends AppCompatActivity {
         contato4 = findViewById(R.id.telcontato4);
         contato5 = findViewById(R.id.telcontato5);
         contato6 = findViewById(R.id.telcontato6);
+
+        discador = findViewById(R.id.discador);
 
         emergencia = findViewById(R.id.emergencia);
 
@@ -127,6 +129,14 @@ public class TelefoneActivity extends AppCompatActivity {
 
                     Toast.makeText(TelefoneActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        discador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                intent.intentActivity(TelefoneActivity.this, DiscadorActivity.class);
             }
         });
 
