@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -44,6 +45,8 @@ public class DiscadorActivity extends AppCompatActivity {
         num0 = findViewById(R.id.num0);
         jogoDaVelha = findViewById(R.id.jogodavelha);
         asterisco = findViewById(R.id.asterisco);
+
+        numero.setMovementMethod(new ScrollingMovementMethod());
 
         ligar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,6 +176,5 @@ public class DiscadorActivity extends AppCompatActivity {
                 numero.append("#");
             }
         });
-
     }
 }
