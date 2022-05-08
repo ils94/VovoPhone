@@ -51,7 +51,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato1"));
                 } else {
@@ -65,7 +65,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato2"));
                 } else {
@@ -79,7 +79,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato3"));
                 } else {
@@ -93,7 +93,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato4"));
                 } else {
@@ -107,7 +107,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato5"));
                 } else {
@@ -121,7 +121,7 @@ public class WhatsappActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(WhatsappActivity.this)) {
+                if (permissoes.permissoesGerais(WhatsappActivity.this)) {
 
                     intent.whatsappCall(WhatsappActivity.this, tinyDB.getString("nomeContato6"));
                 } else {

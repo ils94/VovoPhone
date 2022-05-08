@@ -39,7 +39,7 @@ public class EmergenciaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(EmergenciaActivity.this)) {
+                if (permissoes.permissoesGerais(EmergenciaActivity.this)) {
 
                     intent.telefone(EmergenciaActivity.this, "192");
                 } else {
@@ -53,7 +53,7 @@ public class EmergenciaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(EmergenciaActivity.this)) {
+                if (permissoes.permissoesGerais(EmergenciaActivity.this)) {
 
                     intent.telefone(EmergenciaActivity.this, "193");
                 } else {
@@ -67,7 +67,7 @@ public class EmergenciaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (permissoes.permissoesContatos(EmergenciaActivity.this)) {
+                if (permissoes.permissoesGerais(EmergenciaActivity.this)) {
 
                     intent.telefone(EmergenciaActivity.this, "190");
                 } else {

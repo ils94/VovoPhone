@@ -52,7 +52,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato1"));
                 } else {
@@ -66,7 +66,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato2"));
                 } else {
@@ -80,7 +80,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato3"));
                 } else {
@@ -94,7 +94,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato4"));
                 } else {
@@ -108,7 +108,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato5"));
                 } else {
@@ -122,7 +122,7 @@ public class TelefoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(permissoes.permissoesContatos(TelefoneActivity.this)){
+                if(permissoes.permissoesGerais(TelefoneActivity.this)){
 
                     intent.telefone(TelefoneActivity.this, tinyDB.getString("numeroContato6"));
                 } else {

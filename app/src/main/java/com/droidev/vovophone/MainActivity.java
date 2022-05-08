@@ -202,7 +202,13 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.atualizar:
 
-                atualizar.downloader(MainActivity.this, url);
+                if (permissoes.permissoesGerais(MainActivity.this)) {
+
+                    atualizar.downloader(MainActivity.this, url);
+                } else {
+
+                    Toast.makeText(MainActivity.this, "É preciso conceder as permissões necessárias primeiro.", Toast.LENGTH_LONG).show();
+                }
 
                 break;
         }
