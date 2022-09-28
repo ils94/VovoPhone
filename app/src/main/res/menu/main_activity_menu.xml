@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/configuracoes"
+        android:title="Configurações do Android" />
+
+    <item
+        android:id="@+id/configurarContatos"
+        android:title="Configurar Contatos" />
+
+    <item
+        android:id="@+id/googleplaystore"
+        android:title="Google Play Store" />
+
+    <item
+        android:id="@+id/navegador"
+        android:title="Navegador de Internet" />
+
+    <item
+        android:id="@+id/atualizar"
+        android:title="Atualizar" />
+</menu>
